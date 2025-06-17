@@ -1,0 +1,986 @@
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!--    <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nsd Events Paris</title>
+    <link rel="stylesheet" crossorigin="" href="/style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <nav
+        class="shadow-xl sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      >
+        <div
+          class="flex items-center justify-between max-w-[80%] lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl m-auto py-4"
+        >
+          <a href="/"
+            ><img src="/logo.png" width="120" height="30" alt="Logo"
+          /></a>
+          <div></div>
+          <div class="items-center gap-9 hidden lg:flex">
+            <a href="/">Home</a><a href="/about">About us</a
+            ><a
+              target="_blank"
+              href="https://wa.me/33759645052"
+              rel="noreferrer"
+              >Contact us</a
+            ><a href="/faq">FAQ</a>
+          </div>
+          <div class="flex gap-3 items-center gap-5">
+            <div class="">
+              <div class="flex item-center gap-3">
+                <a
+                  href="https://www.instagram.com/nsdeventsparis/"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Instagram">
+                      <g>
+                        <path
+                          d="M18.437,20.937H5.563a2.5,2.5,0,0,1-2.5-2.5V5.563a2.5,2.5,0,0,1,2.5-2.5H18.437a2.5,2.5,0,0,1,2.5,2.5V18.437A2.5,2.5,0,0,1,18.437,20.937ZM5.563,4.063a1.5,1.5,0,0,0-1.5,1.5V18.437a1.5,1.5,0,0,0,1.5,1.5H18.437a1.5,1.5,0,0,0,1.5-1.5V5.563a1.5,1.5,0,0,0-1.5-1.5Z"
+                        ></path>
+                        <path
+                          d="M12,16.594A4.595,4.595,0,1,1,16.6,12,4.6,4.6,0,0,1,12,16.594ZM12,8.4A3.595,3.595,0,1,0,15.6,12,3.6,3.6,0,0,0,12,8.4Z"
+                        ></path>
+                        <circle cx="17.2" cy="6.83" r="1.075"></circle>
+                      </g>
+                    </g></svg></a
+                ><a
+                  href="https://www.facebook.com/nsdeventsparis"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Facebook">
+                      <path
+                        d="M19.02,4.975A9.93,9.93,0,0,0,2.07,12,9.935,9.935,0,0,0,12,21.935a9.98,9.98,0,0,0,3.8-.75,10.189,10.189,0,0,0,3.22-2.16,9.934,9.934,0,0,0,0-14.05Zm-.7,13.34A8.921,8.921,0,0,1,13,20.885v-6.56h1.88a1,1,0,0,0,0-2H13V9.585a1,1,0,0,1,1-1h1.2a1,1,0,0,0,0-2H13.5a2.5,2.5,0,0,0-2.5,2.5v3.24H9.13a1,1,0,1,0,0,2H11v6.56a8.919,8.919,0,1,1,9.26-5.47A9.061,9.061,0,0,1,18.32,18.315Z"
+                      ></path>
+                    </g></svg></a
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="LinkedIn">
+                    <g>
+                      <path
+                        d="M18.44,3.06H5.56a2.507,2.507,0,0,0-2.5,2.5V18.44a2.507,2.507,0,0,0,2.5,2.5H18.44a2.5,2.5,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.44,3.06Zm1.5,15.38a1.511,1.511,0,0,1-1.5,1.5H5.56a1.511,1.511,0,0,1-1.5-1.5V5.56a1.511,1.511,0,0,1,1.5-1.5H18.44a1.511,1.511,0,0,1,1.5,1.5Z"
+                      ></path>
+                      <g>
+                        <path
+                          d="M6.376,10.748a1,1,0,1,1,2,0v6.5h0a1,1,0,0,1-2,0Z"
+                        ></path>
+                        <circle cx="7.376" cy="6.744" r="1"></circle>
+                        <path
+                          d="M17.62,13.37v3.88a1,1,0,1,1-2,0V13.37a1.615,1.615,0,1,0-3.23,0v3.88a1,1,0,0,1-2,0v-6.5a1.016,1.016,0,0,1,1-1,.94.94,0,0,1,.84.47,3.609,3.609,0,0,1,5.39,3.15Z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute top-1/2 left-20 lg:left-32 -translate-y-1/2">
+          <p class="uppercase text-3 xl lg:text-8xl text-white">
+            Bienvenue à <br />NOUS SOMMES DESI EVENTS
+          </p>
+        </div>
+      </div>
+      <div class="container m-auto my-20">
+        <p class="text-6xl mb-4">Upcoming Events</p>
+        <hr />
+        <div class="mt-16 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/main-samay-hoon"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/sr-paris-1300x800-1745658306.webp"
+                alt="Main Samay Hoon"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Main Samay Hoon
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Samay Raina | 20 June | 07 PM
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Samay Raina</p>
+                <a href="/events/main-samay-hoon"
+                  ><button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                  >
+                    Buy Tickets
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/the-lavari-show"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/whatsapp-image-2025-02-06-at-11-1738844682.jpeg"
+                alt="The Lavari Show"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  The Lavari Show
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Manan Is coming back to Paris
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>The Lavari Show live on 10th July</p>
+                <a href="/events/the-lavari-show"
+                  ><button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                  >
+                    Buy Tickets
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/manhar-seth-live-in-paris"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/manhar-paris-web-1744649498.jpg"
+                alt="Manhar Seth - Live in Paris"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Manhar Seth - Live in Paris
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Live in Paris
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Manhar Seth | 05th Sept | 7PM</p>
+                <a href="/events/manhar-seth-live-in-paris"
+                  ><button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                  >
+                    Buy Tickets
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/gaurav-gupta-live-in-paris"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/gg-paris-web-1744649703.jpg"
+                alt="Gaurav Gupta - Live in Paris"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Gaurav Gupta - Live in Paris
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Gaurav Gupta - Live in Paris
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Gaurav Gupta | 04th Oct | 07 PM</p>
+                <a href="/events/gaurav-gupta-live-in-paris"
+                  ><button
+                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                  >
+                    Buy Tickets
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container m-auto my-20">
+        <p class="text-6xl mb-4">Past Events</p>
+        <hr />
+        <div class="mt-16 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/kanan-gill"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/kanan-1738845093.jpg"
+                alt="Kanan Gill"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Kanan Gill : Is this it?
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Is this it?
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Live in Paris</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/kunal-kamra"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/kamra-1738845259.png"
+                alt="Kunal Kamra"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Kunal Kamra : So called comedian
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  So called comedian
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Live in Paris</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/atul-khatri"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/atul-1738845401.webp"
+                alt="Atul Khatri"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Atul Khatri : Daddy Cool
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Daddy Cool
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Live in Parits</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/who-are-you"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/rahul-1721210101.avif"
+                alt="Who are you?"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Who are you? : Standup Solo
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Standup Solo
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Rahul subramanian</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/excuse-me-brother"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/image-11-1721209888.jpg"
+                alt="Excuse me brother"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Excuse me brother : A standup comedy special
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  A standup comedy special
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Aakash Gupta</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/chaman-chatora"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/gaurav-1719585113.jpg"
+                alt="Chaman Chatora"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Chaman Chatora : A standup comedy special
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  A standup comedy special
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Gaurav Kapoor</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/man-of-the-house"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/event-2-1711447593.webp"
+                alt="Man Of The House"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Man Of The House : Standup Solo
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Standup Solo
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Prashasti singh</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/nothing-makes-sense"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/event-3-1709209931-1711447169.webp"
+                alt="Nothing Makes Sense"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Nothing Makes Sense : Standup Solo
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Standup Solo
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Varun Grover</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/we-need-to-talk2"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/sa-1711701374.webp"
+                alt="We Need To Talk"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  We Need To Talk : A standup comedy special
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  A standup comedy special
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Aravind SA</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/toxic"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/upmanyu-image-1711447722.webp"
+                alt="Toxic"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Toxic : A standup comedy special
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  A standup comedy special
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Abhishek upmanyu</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/kisi-ko-batana-mat"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/image-4-1716132870.jpg"
+                alt="KISI KO BATANA MAT"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  KISI KO BATANA MAT : By Anubhav Singh Bassi
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  By Anubhav Singh Bassi
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Anubhav Singh Bassi on 5th September</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/jaspreet-singh-live-in-paris"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/screenshot-2024-10-18-at-14-1729253919.jpg"
+                alt="Jaspreet Singh Live in Paris"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Jaspreet Singh Live in Paris : Standup Solo
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Standup Solo
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Jaspreet Singh Live on 14th Feb</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/manik-mahna-live-in-paris"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/mm-paris-1x1-nsd-1742230019.jpg"
+                alt="Manik Mahna Live in Paris"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Manik Mahna Live in Paris : Manik's Day Out
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Manik's Day Out
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Manik Mahna Live 11 may</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/prashasti-live-in-paris"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="https://backend.nsdeventsparis.com/storage/uploads/events/prashasti-singh-live-1735833324.webp"
+                alt="Prashasti - Live in Paris"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Prashasti - Live in Paris : standup solo
+                </h5></a
+              ><a href="#"
+                ><h2
+                  class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  standup solo
+                </h2></a
+              >
+              <div class="flex items-center justify-between">
+                <p>Prashasti Singh Live on 30th May</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container m-auto my-20">
+        <p class="text-6xl mb-4">Our Services</p>
+        <hr />
+        <div class="mt-16 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/kanan-gill"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="/photography.jpg"
+                alt="Kanan Gill"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Photography & Media
+                </h5></a
+              >
+              <div class="flex items-center mt-3 justify-between">
+                <p>
+                  Capture every moment with professional-grade photography and
+                  videography. We provide event coverage, social media reels,
+                  drone shoots, livestreaming, and more. Perfect for
+                  influencers, businesses, and personal events that deserve to
+                  be remembered.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/kanan-gill"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="/vip.jpg"
+                alt="Kanan Gill"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Logistics & VIP Services
+                </h5></a
+              >
+              <div class="flex items-center mt-3 justify-between">
+                <p>
+                  We ensure your guests and artists arrive in style and comfort.
+                  Our logistics services include luxury taxis, group shuttles,
+                  celebrity concierge, and full artist travel management—from
+                  flights to hotel bookings and local transfers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm col-span-1"
+          >
+            <a href="/events/kanan-gill"
+              ><img
+                class="mb-3 rounded-t-lg h-56 w-full object-cover"
+                src="/media.jpg"
+                alt="Kanan Gill"
+            /></a>
+            <div class="px-5 py-5">
+              <a to="#"
+                ><h5
+                  class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Event Production & Media
+                </h5></a
+              >
+              <div class="flex items-center mt-3 justify-between">
+                <p>
+                  Bring your event vision to life with cinematic quality and
+                  cutting-edge tech. We offer complete production services—from
+                  sound and lighting setups, stage design, and LED screens to
+                  custom event apps and check-in solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-card rounded-xl p-8 hover-lift">
+          <div class="mb-4 mt-16">
+            <h5 class="text-3xl font-bold mb-4 text-destructive">
+              B2B & Brand Services
+            </h5>
+          </div>
+          <p class="text-gray-300 leading-relaxed">
+            Elevate your brand with powerful partnerships. We offer sponsorship
+            management, venue bookings, custom event branding, merch design, and
+            full support for exhibitors. Perfect for trade shows, product
+            activations, and brand experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="container mx-auto my-20 px-4">
+        <div
+          class="bg-white/10 backdrop-blur-md rounded-3xl p-12 shadow-2xl"
+        >
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-8 text-white">
+            <span
+              class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
+            >
+              <p class="text-6xl mb-4">Why Choose Us?</p>
+              <hr />
+            </span>
+          </h2>
+
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-9 mt-12 px-4"
+          >
+            <!-- Card 1 -->
+            <div
+              class="flex flex-col items-center transition transform hover:scale-105 hover:-translate-y-1"
+            >
+              <div
+                class="w-24 h-24 bg-purple-600 text-white rounded-full flex items-center justify-center shadow-lg mb-5"
+              >
+                <span class="text-4xl font-extrabold">5+</span>
+              </div>
+              <h3 class="text-xl font-semibold text-white mb-2">
+                Years Experience
+              </h3>
+              <p class="text-gray-300">Producing Desi events in Paris</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="flex flex-col items-center transition transform hover:scale-105 hover:-translate-y-1"
+            >
+              <div
+                class="w-24 h-24 bg-pink-600 text-white rounded-full flex items-center justify-center shadow-lg mb-5"
+              >
+                <span class="text-4xl font-extrabold">100+</span>
+              </div>
+              <h3 class="text-xl font-semibold text-white mb-2">
+                Artists Booked
+              </h3>
+              <p class="text-gray-300">From India, EU, and UK</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="flex flex-col items-center transition transform hover:scale-105 hover:-translate-y-1"
+            >
+              <div
+                class="w-24 h-24 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center shadow-lg mb-5"
+              >
+                <svg
+                  class="w-10 h-10 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-white mb-2">
+                Turnkey Solutions
+              </h3>
+              <p class="text-gray-300">From concept to execution</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container m-auto my-20">
+        <p class="text-6xl mb-4">Join Us</p>
+        <hr />
+        <div class="mt-16 flex flex-col lg:flex-row gap-20 justify-between">
+          <div class="w-full">
+            <p class="text-7xl font-bold">
+              NEVER MISS YOUR <br />
+              FAVOURITE ARTIST AGAIN
+            </p>
+            <p class="mt-3">
+              Be the first to know our upcoming shows, events, discounts and
+              more!
+            </p>
+          </div>
+          <div class="w-full flex flex-col gap-4">
+            <p class="text-3xl">Subscribe to news letter</p>
+            <input
+              type="email"
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              placeholder="Email"
+            /><input
+              type="text"
+              class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              placeholder="Name"
+            /><button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1">
+        <img
+          src="/lastimage.jpg"
+          alt=""
+          class="w-full h-[30rem] object-cover"
+        />
+      </div>
+      <footer class="bg-background py-4">
+        <hr />
+        <div
+          class="flex flex-col lg:flex-row gap-4 items-start justify-between max-w-[80%] lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl m-auto py-4"
+        >
+          <div>
+            <img src="/logo.png" width="120" height="30" alt="Logo" />
+          </div>
+          <div>
+            <div class="flex flex-col gap-3">
+              <a href="/">Home</a
+              ><a
+                target="_blank"
+                href="https://wa.me/33759645052"
+                rel="noreferrer"
+                >Contact us</a
+              ><a href="/faq">FAQ</a>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col gap-3">
+              <a href="/events">Privacy &amp; policy</a
+              ><a href="/partners">Terms &amp; condition</a
+              ><a href="/about-us">Refund policy</a>
+            </div>
+          </div>
+          <div class="">
+            <p class="my-2">Follow us on social media</p>
+            <div class="flex item-center gap-3">
+              <a
+                href="https://www.instagram.com/nsdeventsparis"
+                rel="noreferrer"
+                target="_blank"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Instagram">
+                    <g>
+                      <path
+                        d="M18.437,20.937H5.563a2.5,2.5,0,0,1-2.5-2.5V5.563a2.5,2.5,0,0,1,2.5-2.5H18.437a2.5,2.5,0,0,1,2.5,2.5V18.437A2.5,2.5,0,0,1,18.437,20.937ZM5.563,4.063a1.5,1.5,0,0,0-1.5,1.5V18.437a1.5,1.5,0,0,0,1.5,1.5H18.437a1.5,1.5,0,0,0,1.5-1.5V5.563a1.5,1.5,0,0,0-1.5-1.5Z"
+                      ></path>
+                      <path
+                        d="M12,16.594A4.595,4.595,0,1,1,16.6,12,4.6,4.6,0,0,1,12,16.594ZM12,8.4A3.595,3.595,0,1,0,15.6,12,3.6,3.6,0,0,0,12,8.4Z"
+                      ></path>
+                      <circle cx="17.2" cy="6.83" r="1.075"></circle>
+                    </g>
+                  </g></svg></a
+              ><a
+                href="https://www.facebook.com/nsdeventsparis"
+                rel="noreferrer"
+                target="_blank"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Facebook">
+                    <path
+                      d="M19.02,4.975A9.93,9.93,0,0,0,2.07,12,9.935,9.935,0,0,0,12,21.935a9.98,9.98,0,0,0,3.8-.75,10.189,10.189,0,0,0,3.22-2.16,9.934,9.934,0,0,0,0-14.05Zm-.7,13.34A8.921,8.921,0,0,1,13,20.885v-6.56h1.88a1,1,0,0,0,0-2H13V9.585a1,1,0,0,1,1-1h1.2a1,1,0,0,0,0-2H13.5a2.5,2.5,0,0,0-2.5,2.5v3.24H9.13a1,1,0,1,0,0,2H11v6.56a8.919,8.919,0,1,1,9.26-5.47A9.061,9.061,0,0,1,18.32,18.315Z"
+                    ></path>
+                  </g></svg></a
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="LinkedIn">
+                  <g>
+                    <path
+                      d="M18.44,3.06H5.56a2.507,2.507,0,0,0-2.5,2.5V18.44a2.507,2.507,0,0,0,2.5,2.5H18.44a2.5,2.5,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.44,3.06Zm1.5,15.38a1.511,1.511,0,0,1-1.5,1.5H5.56a1.511,1.511,0,0,1-1.5-1.5V5.56a1.511,1.511,0,0,1,1.5-1.5H18.44a1.511,1.511,0,0,1,1.5,1.5Z"
+                    ></path>
+                    <g>
+                      <path
+                        d="M6.376,10.748a1,1,0,1,1,2,0v6.5h0a1,1,0,0,1-2,0Z"
+                      ></path>
+                      <circle cx="7.376" cy="6.744" r="1"></circle>
+                      <path
+                        d="M17.62,13.37v3.88a1,1,0,1,1-2,0V13.37a1.615,1.615,0,1,0-3.23,0v3.88a1,1,0,0,1-2,0v-6.5a1.016,1.016,0,0,1,1-1,.94.94,0,0,1,.84.47,3.609,3.609,0,0,1,5.39,3.15Z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-3"><p>Made By TechSkylab With ❤️</p></div>
+      </footer>
+    </div>
+  </body>
+</html>
