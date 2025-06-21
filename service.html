@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - NSD Events Paris</title>
+    <link rel="stylesheet" crossorigin="" href="/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .banner-content {
+        position: relative;
+        z-index: 2;
+        animation: slideInLeft 1.5s ease-out;
+      }
+
+      @keyframes slideInLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100px) translateY(-50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0) translateY(-50%);
+        }
+      }
+
+      @keyframes glow {
+        0% {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+            0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        100% {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+            0 0 30px rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in {
+        animation: fade-in 1s ease-out forwards;
+        opacity: 0;
+      }
+
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .gradient-text {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .floating-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav
+      class="shadow-xl sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+    >
+      <div
+        class="flex items-center justify-between max-w-[80%] lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl m-auto py-4"
+      >
+        <a href="/"
+          ><img src="/logo.png" width="120" height="30" alt="Logo"
+        /></a>
+        <div></div>
+        <div class="items-center gap-9 hidden lg:flex">
+          <a href="/index.html">Home</a><a href="/service.html">Services</a
+          ><a target="_blank" href="https://wa.me/33759645052" rel="noreferrer"
+            >Contact us</a
+          ><a href="/faq">FAQ</a>
+        </div>
+        <div class="flex gap-3 items-center gap-5">
+          <div class="">
+            <div class="flex item-center gap-3">
+              <a
+                href="https://www.instagram.com/nsdeventsparis/"
+                rel="noreferrer"
+                target="_blank"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Instagram">
+                    <g>
+                      <path
+                        d="M18.437,20.937H5.563a2.5,2.5,0,0,1-2.5-2.5V5.563a2.5,2.5,0,0,1,2.5-2.5H18.437a2.5,2.5,0,0,1,2.5,2.5V18.437A2.5,2.5,0,0,1,18.437,20.937ZM5.563,4.063a1.5,1.5,0,0,0-1.5,1.5V18.437a1.5,1.5,0,0,0,1.5,1.5H18.437a1.5,1.5,0,0,0,1.5-1.5V5.563a1.5,1.5,0,0,0-1.5-1.5Z"
+                      ></path>
+                      <path
+                        d="M12,16.594A4.595,4.595,0,1,1,16.6,12,4.6,4.6,0,0,1,12,16.594ZM12,8.4A3.595,3.595,0,1,0,15.6,12,3.6,3.6,0,0,0,12,8.4Z"
+                      ></path>
+                      <circle cx="17.2" cy="6.83" r="1.075"></circle>
+                    </g>
+                  </g></svg></a
+              ><a
+                href="https://www.facebook.com/nsdeventsparis"
+                rel="noreferrer"
+                target="_blank"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Facebook">
+                    <path
+                      d="M19.02,4.975A9.93,9.93,0,0,0,2.07,12,9.935,9.935,0,0,0,12,21.935a9.98,9.98,0,0,0,3.8-.75,10.189,10.189,0,0,0,3.22-2.16,9.934,9.934,0,0,0,0-14.05Zm-.7,13.34A8.921,8.921,0,0,1,13,20.885v-6.56h1.88a1,1,0,0,0,0-2H13V9.585a1,1,0,0,1,1-1h1.2a1,1,0,0,0,0-2H13.5a2.5,2.5,0,0,0-2.5,2.5v3.24H9.13a1,1,0,1,0,0,2H11v6.56a8.919,8.919,0,1,1,9.26-5.47A9.061,9.061,0,0,1,18.32,18.315Z"
+                    ></path>
+                  </g></svg></a
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="LinkedIn">
+                  <g>
+                    <path
+                      d="M18.44,3.06H5.56a2.507,2.507,0,0,0-2.5,2.5V18.44a2.507,2.507,0,0,0,2.5,2.5H18.44a2.5,2.5,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.44,3.06Zm1.5,15.38a1.511,1.511,0,0,1-1.5,1.5H5.56a1.511,1.511,0,0,1-1.5-1.5V5.56a1.511,1.511,0,0,1,1.5-1.5H18.44a1.511,1.511,0,0,1,1.5,1.5Z"
+                    ></path>
+                    <g>
+                      <path
+                        d="M6.376,10.748a1,1,0,1,1,2,0v6.5h0a1,1,0,0,1-2,0Z"
+                      ></path>
+                      <circle cx="7.376" cy="6.744" r="1"></circle>
+                      <path
+                        d="M17.62,13.37v3.88a1,1,0,1,1-2,0V13.37a1.615,1.615,0,1,0-3.23,0v3.88a1,1,0,0,1-2,0v-6.5a1.016,1.016,0,0,1,1-1,.94.94,0,0,1,.84.47,3.609,3.609,0,0,1,5.39,3.15Z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="banner">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="absolute top-1/2 left-20 lg:left-32 -translate-y-1/2">
+        <p class="uppercase text-3 xl lg:text-8xl text-white">Our Services</p>
+        <p class="uppercase text-3 xl mt-3 lg:text-5xl text-white">
+          Excellence Delivered
+        </p>
+
+        <p class="text-2 xl lg:text-2xl mt-10 text-white">
+          Creating unforgettable experiences with passion, precision, and
+          unmatched creativity.
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Introduction -->
+    <div class="container max-w-7xl mx-auto my-20 px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl lg:text-6xl mb-6 font-normal">What We Offer</h2>
+        <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          From intimate gatherings to grand spectacles, we bring your vision to
+          life with unmatched creativity and precision. Our comprehensive
+          services ensure every detail is perfect, every moment memorable.
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Services Grid -->
+    <div class="container max-w-7xl mx-auto my-20 px-6">
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Event Planning & Management -->
+        <div
+          class="service-card rounded-lg border border-gray-700 bg-gray-900 text-white shadow-xl"
+        >
+          <img
+            class="mb-4 rounded-t-lg h-64 w-full object-cover"
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Event Planning"
+          />
+          <div class="px-6 py-6">
+            <h3 class="text-3xl font-normal tracking-tight mb-4 text-white">
+              Event Planning & Management
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              From corporate conferences to private milestones, we plan events
+              that impress. We handle everything—product launches, team-building
+              events, intimate birthdays, and lavish weddings. Our expert team
+              ensures flawless coordination, creative concepts, and
+              unforgettable guest experiences.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white text-black font-bold py-3 px-6 rounded-md transition-colors"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photography & Media -->
+        <div
+          class="service-card rounded-lg border border-gray-700 bg-gray-900 text-white shadow-xl"
+        >
+          <img
+            class="mb-4 rounded-t-lg h-64 w-full object-cover"
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Photography"
+          />
+          <div class="px-6 py-6">
+            <h3 class="text-3xl font-normal tracking-tight mb-4 text-white">
+              Photography & Media
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Capture every moment with professional-grade photography and
+              videography. We provide event coverage, social media reels, drone
+              shoots, livestreaming, and more. Perfect for influencers,
+              businesses, and personal events that deserve to be remembered.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white text-black font-bold py-3 px-6 rounded-md transition-colors"
+              >
+                View Portfolio
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logistics & VIP Services -->
+        <div
+          class="service-card rounded-lg border border-gray-700 bg-gray-900 text-white shadow-xl"
+        >
+          <img
+            class="mb-4 rounded-t-lg h-64 w-full object-cover"
+            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="VIP Services"
+          />
+          <div class="px-6 py-6">
+            <h3 class="text-3xl font-normal tracking-tight mb-4 text-white">
+              Logistics & VIP Services
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              We ensure your guests and artists arrive in style and comfort. Our
+              logistics services include luxury taxis, group shuttles, celebrity
+              concierge, and full artist travel management—from flights to hotel
+              bookings and local transfers.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white text-black font-bold py-3 px-6 rounded-md transition-colors"
+              >
+                Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Production & Media -->
+        <div
+          class="service-card rounded-lg border border-gray-700 bg-gray-900 text-white shadow-xl"
+        >
+          <img
+            class="mb-4 rounded-t-lg h-64 w-full object-cover"
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Event Production"
+          />
+          <div class="px-6 py-6">
+            <h3 class="text-3xl font-normal tracking-tight mb-4 text-white">
+              Event Production & Media
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Bring your event vision to life with cinematic quality and
+              cutting-edge tech. We offer complete production services—from
+              sound and lighting setups, stage design, and LED screens to custom
+              event apps and check-in solutions.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white text-black font-bold py-3 px-6 rounded-md transition-colors"
+              >
+                Explore Tech
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- B2B & Brand Services -->
+        <div
+          class="service-card rounded-lg border border-gray-700 bg-gray-900 text-white shadow-xl"
+        >
+          <img
+            class="mb-4 rounded-t-lg h-64 w-full object-cover"
+            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Brand Services"
+          />
+          <div class="px-6 py-6">
+            <h3 class="text-3xl font-normal tracking-tight mb-4 text-white">
+              B2B & Brand Services
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Elevate your brand with powerful partnerships. We offer
+              sponsorship management, venue bookings, custom event branding,
+              merch design, and full support for exhibitors. Perfect for trade
+              shows, product activations, and brand experiences.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white text-black font-bold py-3 px-6 rounded-md transition-colors"
+              >
+                Partner With Us
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Solutions -->
+        <div
+          class="service-card rounded-lg border border-gray-700 bg-gray-900 text-white shadow-xl"
+        >
+          <img
+            class="mb-4 rounded-t-lg h-64 w-full object-cover"
+            src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Custom Solutions"
+          />
+          <div class="px-6 py-6">
+            <h3 class="text-3xl font-normal tracking-tight mb-4 text-white">
+              Custom Solutions
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Have a unique vision? We create bespoke experiences tailored to
+              your specific needs. From concept development to execution, we
+              turn your wildest ideas into reality with innovative approaches
+              and creative problem-solving.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-white text-black font-bold py-3 px-6 rounded-md transition-colors"
+              >
+                Discuss Ideas
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="bg-gray-900 py-20">
+      <div class="container max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl lg:text-6xl mb-6 font-normal">Why Choose Us?</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center floating-animation">
+            <div class="text-4xl mb-4">🎭</div>
+            <h3 class="text-2xl font-normal mb-2 text-white">
+              5+ Years Experience
+            </h3>
+            <p class="text-gray-300">Producing Desi events in Paris</p>
+          </div>
+          <div
+            class="text-center floating-animation"
+            style="animation-delay: 1s"
+          >
+            <div class="text-4xl mb-4">🌟</div>
+            <h3 class="text-2xl font-normal mb-2 text-white">
+              100+ Artists Booked
+            </h3>
+            <p class="text-gray-300">From India, EU, and UK</p>
+          </div>
+          <div
+            class="text-center floating-animation"
+            style="animation-delay: 2s"
+          >
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-2xl font-normal mb-2 text-white">
+              Turnkey Solutions
+            </h3>
+            <p class="text-gray-300">From concept to execution</p>
+          </div>
+          <div
+            class="text-center floating-animation"
+            style="animation-delay: 3s"
+          >
+            <div class="text-4xl mb-4">💎</div>
+            <h3 class="text-2xl font-normal mb-2 text-white">
+              Premium Quality
+            </h3>
+            <p class="text-gray-300">Excellence in every detail</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-background py-4">
+      <hr />
+      <div
+        class="flex flex-col lg:flex-row gap-4 items-start justify-between max-w-[80%] lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl m-auto py-4"
+      >
+        <div>
+          <img src="/logo.png" width="120" height="30" alt="Logo" />
+        </div>
+        <div>
+          <div class="flex flex-col gap-3">
+            <a href="/">Home</a
+            ><a
+              target="_blank"
+              href="https://wa.me/33759645052"
+              rel="noreferrer"
+              >Contact us</a
+            ><a href="/faq">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col gap-3">
+            <a href="/events">Privacy &amp; policy</a
+            ><a href="/partners">Terms &amp; condition</a
+            ><a href="/about-us">Refund policy</a>
+          </div>
+        </div>
+        <div class="">
+          <p class="my-2">Follow us on social media</p>
+          <div class="flex item-center gap-3">
+            <a
+              href="https://www.instagram.com/nsdeventsparis"
+              rel="noreferrer"
+              target="_blank"
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Instagram">
+                  <g>
+                    <path
+                      d="M18.437,20.937H5.563a2.5,2.5,0,0,1-2.5-2.5V5.563a2.5,2.5,0,0,1,2.5-2.5H18.437a2.5,2.5,0,0,1,2.5,2.5V18.437A2.5,2.5,0,0,1,18.437,20.937ZM5.563,4.063a1.5,1.5,0,0,0-1.5,1.5V18.437a1.5,1.5,0,0,0,1.5,1.5H18.437a1.5,1.5,0,0,0,1.5-1.5V5.563a1.5,1.5,0,0,0-1.5-1.5Z"
+                    ></path>
+                    <path
+                      d="M12,16.594A4.595,4.595,0,1,1,16.6,12,4.6,4.6,0,0,1,12,16.594ZM12,8.4A3.595,3.595,0,1,0,15.6,12,3.6,3.6,0,0,0,12,8.4Z"
+                    ></path>
+                    <circle cx="17.2" cy="6.83" r="1.075"></circle>
+                  </g>
+                </g></svg></a
+            ><a
+              href="https://www.facebook.com/nsdeventsparis"
+              rel="noreferrer"
+              target="_blank"
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Facebook">
+                  <path
+                    d="M19.02,4.975A9.93,9.93,0,0,0,2.07,12,9.935,9.935,0,0,0,12,21.935a9.98,9.98,0,0,0,3.8-.75,10.189,10.189,0,0,0,3.22-2.16,9.934,9.934,0,0,0,0-14.05Zm-.7,13.34A8.921,8.921,0,0,1,13,20.885v-6.56h1.88a1,1,0,0,0,0-2H13V9.585a1,1,0,0,1,1-1h1.2a1,1,0,0,0,0-2H13.5a2.5,2.5,0,0,0-2.5,2.5v3.24H9.13a1,1,0,1,0,0,2H11v6.56a8.919,8.919,0,1,1,9.26-5.47A9.061,9.061,0,0,1,18.32,18.315Z"
+                  ></path>
+                </g></svg></a
+            ><svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              class="text-hoverText text-3xl hover:text-primary hover:cursor-pointer"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="LinkedIn">
+                <g>
+                  <path
+                    d="M18.44,3.06H5.56a2.507,2.507,0,0,0-2.5,2.5V18.44a2.507,2.507,0,0,0,2.5,2.5H18.44a2.5,2.5,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.44,3.06Zm1.5,15.38a1.511,1.511,0,0,1-1.5,1.5H5.56a1.511,1.511,0,0,1-1.5-1.5V5.56a1.511,1.511,0,0,1,1.5-1.5H18.44a1.511,1.511,0,0,1,1.5,1.5Z"
+                  ></path>
+                  <g>
+                    <path
+                      d="M6.376,10.748a1,1,0,1,1,2,0v6.5h0a1,1,0,0,1-2,0Z"
+                    ></path>
+                    <circle cx="7.376" cy="6.744" r="1"></circle>
+                    <path
+                      d="M17.62,13.37v3.88a1,1,0,1,1-2,0V13.37a1.615,1.615,0,1,0-3.23,0v3.88a1,1,0,0,1-2,0v-6.5a1.016,1.016,0,0,1,1-1,.94.94,0,0,1,.84.47,3.609,3.609,0,0,1,5.39,3.15Z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
